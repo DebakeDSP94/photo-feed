@@ -1,0 +1,8 @@
+<h1>Flickr Photo Viewer</h1>
+<h3>Enter a flickr.com user-ID to view that persons photos</h3>
+<p>
+<%= render partial: "form" %>
+
+<% if @photos %>
+  <%= render partial: "photos", photos: @photos %>
+<% end %>
