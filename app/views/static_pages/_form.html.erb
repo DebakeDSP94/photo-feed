@@ -1,4 +1,6 @@
-<%= form_with url: :root, method: :get do |form| %>
-  <%= form.text_field :user_id, placeholder: "User ID" %>
-  <%= form.submit 'submit' %>
-<% end %>
+<div class="form">
+  <%= form_with url: :root, method: :get do |form| %>
+    <%= form.text_field :user_id, placeholder: "User ID" %>
+    <%= form.submit 'submit' %>
+  <% end %>
+</div>

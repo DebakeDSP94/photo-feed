@@ -13,3 +13,42 @@
  *= require_tree .
  *= require_self
  */
+
+body {
+	background-color: rgb(120, 150, 165);
+	font-family: 'Lato', sans-serif;
+}
+.container {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.title-container {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+}
+
+.title {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.form {
+	height: 30px;
+	font-size: 1.5rem;
+}
+.photos {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.photo {
+	display: flex;
+	margin: 20px;
+	border-radius: 20px;
+}
