@@ -1,6 +1,6 @@
 <div class="form">
   <%= form_with url: :root, method: :get do |form| %>
-    <%= form.text_field :user_id, placeholder: "User ID", class: "form-field" %>
+    <%= form.text_field :username, placeholder: "Username", class: "form-field" %>
     <%= form.text_field :tags, placeholder: "tags", class: "form-field" %>
     <%= form.submit 'submit', class: "submit-btn" %>
   <% end %>
