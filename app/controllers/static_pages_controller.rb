@@ -3,8 +3,9 @@ class StaticPagesController < ApplicationController
 
   def index
     @flickr = Flickr.new
-    if params[:user_id].present?
-      @photos = @flickr.people.getPhotos user_id: params[:user_id]
+    if params[:username].present?
+      response = @flickr.people.findByUsername username: params[:username]
+      @photos = @flickr.people.getPhotos user_id: response["nsid"]
     elsif params[:tags].present?
       @photos = @flickr.photos.search tags: params[:tags], safesearch: 1
     else
